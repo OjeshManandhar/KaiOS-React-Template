@@ -6,9 +6,9 @@ A starter template for KaiOS app using ReactJS
 
 - Clone the repo
 - run **yarn** or **yarn install** to install the required _node_modules_
-- Update the app details in _./public/manifest.webapp_
+- Update the app details in _./public/manifest.webapp_, _./public/index.html_ and __name__ in  _./package.json_ if necessary.
   - **version**, **type** and **categories** are necessary in _./public/manifest.webapp_ to run [**KaiAds**](https://www.kaiads.com/publishers/sdk.html)
-  - Currently **KaiAds _version 3_ SDK** file is present in the _./public_ folder and this file provides the function _getKaiAds()_.
+  - Currently **KaiAds _version 3_ SDK** file is present in the _./public_ folder and this file provides the function _getKaiAds()_
   - Use the function **getKaiAds()** as **window.getKaiAds()**
 - The starting point is the _./src/index.js_ file as normal React app made using [**create-react-app**](https://www.npmjs.com/package/create-react-app)
 - After running **yarn build**, a _./build_ folder will be created in the root directory, then send the contents of the _./build_ folder to the device by [WebIDE](https://developer.kaiostech.com/getting-started/build-your-first-package-app/test-your-apps#webide) or load the contents of the _./build_ folder by [Simulator](https://developer.kaiostech.com/getting-started/build-your-first-package-app/test-your-apps#simulator).
